@@ -2,17 +2,14 @@
 // Este é o arquivo da estrutura da aplicação com os middlewares e Rotas
 import 'dotenv/config';
 import express from 'express';
-import 'express-async-errors';
-
 import routes from './routes';
-
 import './database'; // importando o index da pasta database
 
 class app {
   constructor() {
     this.server = express();
 
-    // Se eu não inserir no constructor nunca irão rodar tanto middlewares como as rotasyar
+    // Se eu não inserir no constructor nunca irão rodar tanto middlewares como as rotas
     this.middlewares();
     this.routes();
   }
