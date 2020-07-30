@@ -12,14 +12,14 @@ class HelpController {
       return res.status(400).json({ error: 'User not find' });
     }
 
-    const help = await Helps.create({
+    const helps = await Helps.create({
       title,
       area,
       description,
       user_id,
     });
 
-    return res.json(help);
+    return res.json(helps);
   }
 }
 export default new HelpController();

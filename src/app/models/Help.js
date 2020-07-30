@@ -4,10 +4,9 @@ class Help extends Model {
   static init(sequelize) {
     super.init(
       {
-        titlte: Sequelize.STRING,
+        title: Sequelize.STRING,
         area: Sequelize.STRING,
         description: Sequelize.STRING,
-        bug: Sequelize.BOOLEAN,
       },
       {
         sequelize,
